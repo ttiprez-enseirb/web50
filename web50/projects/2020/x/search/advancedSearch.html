@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/logo.ico">
+
+</head>
+
+<body>
+    
+    <div class="navlinks">
+        <a href="imageSearch.html">Images</a>
+        <a href="index.html">Home</a>
+    </div>
+    <div class="appbar">
+        Advanced Search
+    </div>
+    <form action="https://google.com/search" autocomplete="off">
+        <table>
+            <th>Find pages with...</th>
+            <th width="35%"></th>
+            <th>To do this in the search box.</th>
+            <tr>
+                <td>all these words:</td>
+                <td><input type="text" name="as_q"></td>
+                <td>Type the important words: tri-colour rat terrier</td>
+            </tr>
+            <tr>
+                <td>this exact word or phrase:</td>
+                <td><input type="text" name="as_epq"></td>
+                <td>Put exact words in quotes: "rat terrier"</td>
+            </tr>
+
+            <tr>
+                <td>any of these words:</td>
+                <td><input type="text" name="as_oq"></td>
+                <td>Type OR between all the words you want: miniature OR standard</td>
+            </tr>
+
+            <tr>
+                <td>none of these words:</td>
+                <td><input type="text" name="as_eq"></td>
+                <td>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</td>
+            </tr>
+            <tr>
+                <td>numbers ranging from:</td>
+                <td>
+                    <input class="doubleInput" type="text" name="as_nlo">
+                    <span style="margin: 15px;">to</span>
+                    <input class="doubleInput" type="text" name="as_nhi">
+                </td>
+                    <td>Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</td>
+            </tr>
+            
+            
+        </table>
+        
+        <div class="advancedSearch">
+            <input type="submit" value="Advanced Search">
+        </div>
+        
+    </form>
+</body>
+
+</html>
